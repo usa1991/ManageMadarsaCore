@@ -1,0 +1,204 @@
+@{
+    ViewData["Title"] = "Downloads";
+}
+
+<header class="hero section-cream" style="padding-bottom: 80px;">
+        <div class="container hero-grid" style="text-align: center; display: block;">
+            <div class="badge fade-up">RESOURCES</div>
+            <h1 class="fade-up">Download Center</h1>
+            <p class="fade-up" style="max-width: 600px; margin: 0 auto;">Access all necessary documents, forms, syllabuses, and guidelines right here.</p>
+        </div>
+    </header>
+
+    <div class="container fade-up">
+        <div class="downloads-search-container">
+            <div class="downloads-search-box">
+                <i class="ph-bold ph-magnifying-glass"></i>
+                <input type="text" id="downloadSearchInput" placeholder="Search for files (e.g. Admission Form)...">
+            </div>
+        </div>
+    </div>
+
+    <section class="section-white" style="padding-top: 20px;">
+        <div class="container">
+            
+            <div class="download-categories fade-up">
+                <button class="download-category-btn active" data-filter="all">All Files</button>
+                <button class="download-category-btn" data-filter="admission">Admissions</button>
+                <button class="download-category-btn" data-filter="academic">Academics & Syllabus</button>
+                <button class="download-category-btn" data-filter="guidelines">Guidelines</button>
+                <button class="download-category-btn" data-filter="calendar">Calendars</button>
+            </div>
+            
+            <div style="margin-bottom: 20px;" class="fade-up">
+                <h2 style="font-size: 1.5rem; display: flex; align-items: center; gap: 10px;">
+                    <i class="ph-fill ph-file-arrow-down" style="color: var(--primary);"></i> Document Library
+                </h2>
+            </div>
+            
+            <div class="downloads-grid fade-up" id="downloadsContainer">
+                
+                <!-- Admission Form -->
+                <div class="download-card" data-category="admission">
+                    <div class="latest-badge">NEW</div>
+                    <div class="download-card-header">
+                        <div class="download-icon">
+                            <i class="ph-fill ph-file-pdf"></i>
+                        </div>
+                        <div class="download-info">
+                            <h3>Student Admission Form (2026-27)</h3>
+                            <div class="download-meta">
+                                <span><i class="ph-bold ph-hard-drives"></i> 1.2 MB</span>
+                                <span><i class="ph-bold ph-calendar-blank"></i> Aug 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-card-footer">
+                        <a href="#" class="btn-download" onclick="event.preventDefault();"><i class="ph-bold ph-download-simple"></i> Download PDF</a>
+                    </div>
+                </div>
+
+                <!-- Fee Structure -->
+                <div class="download-card" data-category="admission">
+                    <div class="download-card-header">
+                        <div class="download-icon">
+                            <i class="ph-fill ph-file-pdf"></i>
+                        </div>
+                        <div class="download-info">
+                            <h3>Detailed Fee Structure</h3>
+                            <div class="download-meta">
+                                <span><i class="ph-bold ph-hard-drives"></i> 850 KB</span>
+                                <span><i class="ph-bold ph-calendar-blank"></i> Jun 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-card-footer">
+                        <a href="#" class="btn-download" onclick="event.preventDefault();"><i class="ph-bold ph-download-simple"></i> Download PDF</a>
+                    </div>
+                </div>
+
+                <!-- School Calendar -->
+                <div class="download-card" data-category="calendar">
+                    <div class="latest-badge">NEW</div>
+                    <div class="download-card-header">
+                        <div class="download-icon">
+                            <i class="ph-fill ph-file-pdf"></i>
+                        </div>
+                        <div class="download-info">
+                            <h3>Academic Calendar (2026-27)</h3>
+                            <div class="download-meta">
+                                <span><i class="ph-bold ph-hard-drives"></i> 2.1 MB</span>
+                                <span><i class="ph-bold ph-calendar-blank"></i> Aug 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-card-footer">
+                        <a href="#" class="btn-download" onclick="event.preventDefault();"><i class="ph-bold ph-download-simple"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Holiday List -->
+                <div class="download-card" data-category="calendar">
+                    <div class="download-card-header">
+                        <div class="download-icon">
+                            <i class="ph-fill ph-file-pdf"></i>
+                        </div>
+                        <div class="download-info">
+                            <h3>Official Holiday List (2026)</h3>
+                            <div class="download-meta">
+                                <span><i class="ph-bold ph-hard-drives"></i> 450 KB</span>
+                                <span><i class="ph-bold ph-calendar-blank"></i> Jan 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-card-footer">
+                        <a href="#" class="btn-download" onclick="event.preventDefault();"><i class="ph-bold ph-download-simple"></i> Download PDF</a>
+                    </div>
+                </div>
+
+                <!-- Syllabus -->
+                <div class="download-card" data-category="academic">
+                    <div class="download-card-header">
+                        <div class="download-icon">
+                            <i class="ph-fill ph-file-pdf"></i>
+                        </div>
+                        <div class="download-info">
+                            <h3>Complete Course Syllabus</h3>
+                            <div class="download-meta">
+                                <span><i class="ph-bold ph-hard-drives"></i> 3.5 MB</span>
+                                <span><i class="ph-bold ph-calendar-blank"></i> May 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-card-footer">
+                        <a href="#" class="btn-download" onclick="event.preventDefault();"><i class="ph-bold ph-download-simple"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Exam Schedule -->
+                <div class="download-card" data-category="academic">
+                    <div class="download-card-header">
+                        <div class="download-icon">
+                            <i class="ph-fill ph-file-pdf"></i>
+                        </div>
+                        <div class="download-info">
+                            <h3>Half-Yearly Exam Schedule</h3>
+                            <div class="download-meta">
+                                <span><i class="ph-bold ph-hard-drives"></i> 600 KB</span>
+                                <span><i class="ph-bold ph-calendar-blank"></i> Jul 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-card-footer">
+                        <a href="#" class="btn-download" onclick="event.preventDefault();"><i class="ph-bold ph-download-simple"></i> Download PDF</a>
+                    </div>
+                </div>
+
+                <!-- Books List -->
+                <div class="download-card" data-category="guidelines">
+                    <div class="download-card-header">
+                        <div class="download-icon">
+                            <i class="ph-fill ph-file-pdf"></i>
+                        </div>
+                        <div class="download-info">
+                            <h3>Required Books List</h3>
+                            <div class="download-meta">
+                                <span><i class="ph-bold ph-hard-drives"></i> 900 KB</span>
+                                <span><i class="ph-bold ph-calendar-blank"></i> Mar 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-card-footer">
+                        <a href="#" class="btn-download" onclick="event.preventDefault();"><i class="ph-bold ph-download-simple"></i> Download PDF</a>
+                    </div>
+                </div>
+
+                <!-- Uniform Guide -->
+                <div class="download-card" data-category="guidelines">
+                    <div class="download-card-header">
+                        <div class="download-icon">
+                            <i class="ph-fill ph-file-pdf"></i>
+                        </div>
+                        <div class="download-info">
+                            <h3>Student Uniform Guide</h3>
+                            <div class="download-meta">
+                                <span><i class="ph-bold ph-hard-drives"></i> 1.5 MB</span>
+                                <span><i class="ph-bold ph-calendar-blank"></i> Apr 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-card-footer">
+                        <a href="#" class="btn-download" onclick="event.preventDefault();"><i class="ph-bold ph-download-simple"></i> Download PDF</a>
+                    </div>
+                </div>
+                
+                <div id="noResults" class="downloads-no-results">
+                    No files found matching your search criteria.
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->

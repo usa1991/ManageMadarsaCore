@@ -1,0 +1,202 @@
+@{
+    ViewData["Title"] = "Events";
+}
+
+<header class="hero section-cream">
+        <div class="container hero-grid" style="text-align: center; display: block;">
+            <div class="badge fade-up">CAMPUS LIFE</div>
+            <h1 class="fade-up">Events & Calendar</h1>
+            <p class="fade-up" style="max-width: 600px; margin: 0 auto 30px;">Discover what's happening at Deeniyat Madrasa. From academic competitions to festive celebrations, stay updated with our vibrant community.</p>
+        </div>
+    </header>
+
+    <section class="section-white">
+        <div class="container">
+            <div class="featured-event fade-up">
+                <div class="featured-event-img" style="background-image: url('https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="featured-event-content">
+                    <span class="event-badge">Featured Event</span>
+                    <h2>Annual Quran Competition 2026</h2>
+                    <p style="color: var(--text-muted); margin: 15px 0;">Join us for the grand finale of our annual Qiraat and Hifz competition where students from all branches showcase their beautiful recitation.</p>
+                    
+                    <div class="event-meta">
+                        <span><i class="ph-fill ph-calendar-blank"></i> August 15, 2026</span>
+                        <span><i class="ph-fill ph-clock"></i> 9:00 AM - 2:00 PM</span>
+                        <span><i class="ph-fill ph-map-pin"></i> Main Auditorium</span>
+                    </div>
+
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <div class="countdown-value" id="days">40</div>
+                            <div class="countdown-label">Days</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-value" id="hours">12</div>
+                            <div class="countdown-label">Hours</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-value" id="minutes">30</div>
+                            <div class="countdown-label">Mins</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="countdown-value" id="seconds">45</div>
+                            <div class="countdown-label">Secs</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <a href="#" class="btn-primary" onclick="event.preventDefault(); alert('Registration opened!');">Register Now <i class="ph-bold ph-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-cream">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2>Upcoming Events</h2>
+                <p>Mark your calendars for these important dates</p>
+            </div>
+            
+            <div class="event-grid fade-up">
+                
+                <div class="event-card">
+                    <div style="display: flex;">
+                        <div class="event-date-box" style="padding: 20px 30px;">
+                            <div class="event-day">12</div>
+                            <div class="event-month">SEP</div>
+                        </div>
+                        <div style="background: url('https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80') center/cover; flex: 1;"></div>
+                    </div>
+                    <div class="event-card-body">
+                        <h3>Annual Sports Day</h3>
+                        <div class="event-meta" style="margin-top: 10px;">
+                            <span><i class="ph-fill ph-clock"></i> 8:00 AM</span>
+                            <span><i class="ph-fill ph-map-pin"></i> Campus Ground</span>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">A day full of physical activities, team building, and athletic competitions for all age groups.</p>
+                        <a href="#" class="btn-secondary" style="margin-top: auto; align-self: flex-start;">More Info</a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div style="display: flex;">
+                        <div class="event-date-box" style="padding: 20px 30px;">
+                            <div class="event-day">28</div>
+                            <div class="event-month">SEP</div>
+                        </div>
+                        <div style="background: url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80') center/cover; flex: 1;"></div>
+                    </div>
+                    <div class="event-card-body">
+                        <h3>Parent-Teacher Meeting</h3>
+                        <div class="event-meta" style="margin-top: 10px;">
+                            <span><i class="ph-fill ph-clock"></i> 10:00 AM</span>
+                            <span><i class="ph-fill ph-map-pin"></i> Respective Classrooms</span>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">First term academic review and one-on-one sessions with class teachers to discuss student progress.</p>
+                        <a href="#" class="btn-secondary" style="margin-top: auto; align-self: flex-start;">More Info</a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div style="display: flex;">
+                        <div class="event-date-box" style="padding: 20px 30px;">
+                            <div class="event-day">15</div>
+                            <div class="event-month">OCT</div>
+                        </div>
+                        <div style="background: url('https://images.unsplash.com/photo-1564759077036-3def242e69c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80') center/cover; flex: 1;"></div>
+                    </div>
+                    <div class="event-card-body">
+                        <h3>Annual Day Celebration</h3>
+                        <div class="event-meta" style="margin-top: 10px;">
+                            <span><i class="ph-fill ph-clock"></i> 5:00 PM</span>
+                            <span><i class="ph-fill ph-map-pin"></i> Main Auditorium</span>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">Celebrating academic excellence with student performances, award distributions, and guest speeches.</p>
+                        <a href="#" class="btn-secondary" style="margin-top: auto; align-self: flex-start;">More Info</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-white">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2>Academic Calendar</h2>
+                <p>Overview of the current month</p>
+            </div>
+            
+            <div class="calendar-view fade-up" style="max-width: 800px; margin: 0 auto;">
+                <div class="calendar-header">
+                    <button class="btn-secondary" style="padding: 8px 12px;"><i class="ph-bold ph-caret-left"></i></button>
+                    <h3>August 2026</h3>
+                    <button class="btn-secondary" style="padding: 8px 12px;"><i class="ph-bold ph-caret-right"></i></button>
+                </div>
+                
+                <div class="calendar-grid">
+                    <div class="calendar-day-name">Sun</div>
+                    <div class="calendar-day-name">Mon</div>
+                    <div class="calendar-day-name">Tue</div>
+                    <div class="calendar-day-name">Wed</div>
+                    <div class="calendar-day-name">Thu</div>
+                    <div class="calendar-day-name">Fri</div>
+                    <div class="calendar-day-name">Sat</div>
+                    
+                    <!-- Empty slots for days before 1st -->
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div class="calendar-day">1</div>
+                    
+                    <div class="calendar-day">2</div>
+                    <div class="calendar-day">3</div>
+                    <div class="calendar-day">4</div>
+                    <div class="calendar-day">5</div>
+                    <div class="calendar-day">6</div>
+                    <div class="calendar-day">7</div>
+                    <div class="calendar-day">8</div>
+                    
+                    <div class="calendar-day">9</div>
+                    <div class="calendar-day">10</div>
+                    <div class="calendar-day">11</div>
+                    <div class="calendar-day">12</div>
+                    <div class="calendar-day">13</div>
+                    <div class="calendar-day">14</div>
+                    <div class="calendar-day has-event" title="Quran Competition">15</div>
+                    
+                    <div class="calendar-day">16</div>
+                    <div class="calendar-day">17</div>
+                    <div class="calendar-day">18</div>
+                    <div class="calendar-day">19</div>
+                    <div class="calendar-day">20</div>
+                    <div class="calendar-day">21</div>
+                    <div class="calendar-day">22</div>
+                    
+                    <div class="calendar-day">23</div>
+                    <div class="calendar-day">24</div>
+                    <div class="calendar-day">25</div>
+                    <div class="calendar-day">26</div>
+                    <div class="calendar-day">27</div>
+                    <div class="calendar-day">28</div>
+                    <div class="calendar-day">29</div>
+                    
+                    <div class="calendar-day">30</div>
+                    <div class="calendar-day">31</div>
+                </div>
+                
+                <div style="margin-top: 20px; display: flex; gap: 15px; justify-content: center; font-size: 0.9rem; color: var(--text-muted);">
+                    <div style="display: flex; align-items: center; gap: 5px;">
+                        <div style="width: 12px; height: 12px; background: var(--primary); border-radius: 50%;"></div> Event Day
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->

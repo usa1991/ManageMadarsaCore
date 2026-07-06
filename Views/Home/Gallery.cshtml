@@ -1,0 +1,152 @@
+@{
+    ViewData["Title"] = "Gallery";
+}
+
+<!-- Hero Banner -->
+    <header class="section-cream" style="padding: 160px 0 80px;">
+        <div class="container" style="text-align: center;">
+            <div class="badge">OUR CAMPUS</div>
+            <h1 style="font-size: 3.2rem; margin-bottom: 24px;">Life at Deeniyat</h1>
+            <p style="font-size: 1.1rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 30px;">Take a visual journey through our vibrant campus, state-of-the-art facilities, and the daily lives of our students.</p>
+        </div>
+    </header>
+
+    <!-- Photo Gallery -->
+    <section class="section-white">
+        <div class="container">
+            
+            <!-- Gallery Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="campus">Campus</button>
+                <button class="filter-btn" data-filter="classrooms">Classrooms</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+                <button class="filter-btn" data-filter="graduation">Graduation</button>
+                <button class="filter-btn" data-filter="prayer">Prayer Hall</button>
+            </div>
+
+            <!-- Image Masonry Grid -->
+            <div class="masonry-grid">
+                
+                <div class="gallery-item" data-category="campus">
+                    <img src="https://images.unsplash.com/photo-1565552643632-23c4a259c154?auto=format&fit=crop&q=80&w=800" alt="Campus">
+                    <div class="gallery-overlay" onclick="openLightbox('https://images.unsplash.com/photo-1565552643632-23c4a259c154?auto=format&fit=crop&q=80&w=800')">
+                        <i class="ph-bold ph-magnifying-glass-plus overlay-icon"></i>
+                        <span class="overlay-text">Campus Entrance</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="classrooms">
+                    <img src="https://images.unsplash.com/photo-1584286595398-a59f21d313f5?auto=format&fit=crop&q=80&w=800" alt="Classroom">
+                    <div class="gallery-overlay" onclick="openLightbox('https://images.unsplash.com/photo-1584286595398-a59f21d313f5?auto=format&fit=crop&q=80&w=800')">
+                        <i class="ph-bold ph-magnifying-glass-plus overlay-icon"></i>
+                        <span class="overlay-text">Hifz Classroom</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="prayer">
+                    <img src="https://images.unsplash.com/photo-1564121211835-e88c852648ab?auto=format&fit=crop&q=80&w=800" alt="Prayer Hall">
+                    <div class="gallery-overlay" onclick="openLightbox('https://images.unsplash.com/photo-1564121211835-e88c852648ab?auto=format&fit=crop&q=80&w=800')">
+                        <i class="ph-bold ph-magnifying-glass-plus overlay-icon"></i>
+                        <span class="overlay-text">Grand Prayer Hall</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1579808608826-64195fc166ba?auto=format&fit=crop&q=80&w=800" alt="Events">
+                    <div class="gallery-overlay" onclick="openLightbox('https://images.unsplash.com/photo-1579808608826-64195fc166ba?auto=format&fit=crop&q=80&w=800')">
+                        <i class="ph-bold ph-magnifying-glass-plus overlay-icon"></i>
+                        <span class="overlay-text">Annual Jalsa</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="graduation">
+                    <img src="https://ui-avatars.com/api/?name=class of 2025&background=a2ae40&color=fff&size=400" alt="Graduation">
+                    <div class="gallery-overlay" onclick="openLightbox('https://ui-avatars.com/api/?name=class of 2025&background=a2ae40&color=fff&size=400')">
+                        <i class="ph-bold ph-magnifying-glass-plus overlay-icon"></i>
+                        <span class="overlay-text">Class of 2025</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="sports">
+                    <img src="https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&q=80&w=800" alt="Sports">
+                    <div class="gallery-overlay" onclick="openLightbox('https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&q=80&w=800')">
+                        <i class="ph-bold ph-magnifying-glass-plus overlay-icon"></i>
+                        <span class="overlay-text">Annual Sports Day</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="classrooms">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800" alt="IT Lab">
+                    <div class="gallery-overlay" onclick="openLightbox('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800')">
+                        <i class="ph-bold ph-magnifying-glass-plus overlay-icon"></i>
+                        <span class="overlay-text">Digital Lab</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="campus">
+                    <img src="https://images.unsplash.com/photo-1585036156171-384164a8c675?auto=format&fit=crop&q=80&w=800" alt="Library">
+                    <div class="gallery-overlay" onclick="openLightbox('https://images.unsplash.com/photo-1585036156171-384164a8c675?auto=format&fit=crop&q=80&w=800')">
+                        <i class="ph-bold ph-magnifying-glass-plus overlay-icon"></i>
+                        <span class="overlay-text">Central Library</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <div style="text-align: center; margin-top: 50px;">
+                <button class="btn-outline" style="padding: 12px 32px;"><i class="ph-bold ph-spinner-gap"></i> Load More Images</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Gallery & Campus Tour -->
+    <section class="section-cream">
+        <div class="container">
+            <div class="section-header">
+                <h2>Video Gallery</h2>
+                <p>Watch student recitations, event highlights, and a virtual tour of our beautiful campus.</p>
+            </div>
+
+            <div class="video-grid">
+                
+                <!-- Virtual Campus Tour -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1565552643632-23c4a259c154?auto=format&fit=crop&q=80&w=800" alt="Tour Thumbnail">
+                        <div class="play-btn"><i class="ph-fill ph-play"></i></div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Virtual Campus Tour 2026</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Take a 4K drone tour around our academic blocks, hostels, and prayer hall.</p>
+                    </div>
+                </div>
+
+                <!-- Annual Jalsa Highlight -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1579808608826-64195fc166ba?auto=format&fit=crop&q=80&w=800" alt="Jalsa Thumbnail">
+                        <div class="play-btn"><i class="ph-fill ph-play"></i></div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Annual Jalsa Highlights</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Watch the emotional moments from last year's Hifz graduation ceremony.</p>
+                    </div>
+                </div>
+
+                <!-- Beautiful Qiraat -->
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://ui-avatars.com/api/?name=beautiful qiraat&background=a2ae40&color=fff&size=400" alt="Qiraat Thumbnail">
+                        <div class="play-btn"><i class="ph-fill ph-play"></i></div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Qiraat Competition Finals</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Listen to the beautiful recitation by our 2025 competition winner.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>

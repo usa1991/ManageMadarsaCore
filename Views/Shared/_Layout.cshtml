@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deeniyat - The Ultimate Madrasa Management Software</title>
+    <meta name="description" content="Simple, Powerful & Affordable Madrasa Management Software.">
+    
+    <!-- Google Fonts: Outfit and Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons for modern iconography -->
+    @* <script src="https://unpkg.com/@phosphor-icons/web"></script> *@
+    
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+    
+    <div class="alert-banner">
+        <div class="marquee">
+            <span>🚀 Welcome to Deeniyat - The ultimate ecosystem for your Madarsa! We are currently offering free demo installations. Contact us today! 🚀</span>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <img src="~/images/Logo.png" alt="Deeniyat Logo" class="logo-img" onerror="this.src='https://placehold.co/150x40/a2ae40/ffffff?text=Deeniyat';">
+                <span>Deeniyat</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#features">Features</a></li>
+                <li class="dropdown">
+                    <span>About <i class="ph-bold ph-caret-down"></i></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Home/About">About Us</a></li>
+                        <li><a href="/Home/Vision">Vision</a></li>
+                        <li><a href="/Home/Teachers">Teachers</a></li>
+                        <li><a href="/Home/Faq">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span>Academics <i class="ph-bold ph-caret-down"></i></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Home/Courses">Courses</a></li>
+                        <li><a href="/Home/Timetable">Timetable</a></li>
+                        <li><a href="/Home/Prayer">Prayer Times</a></li>
+                        <li><a href="/Home/Admissions">Admissions</a></li>
+                        <li><a href="/Home/Fees">Fees</a></li>
+                        <li><a href="/Home/Downloads">Downloads</a></li>
+                        <li><a href="/Home/Library">Library</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span>Media <i class="ph-bold ph-caret-down"></i></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Home/News">News</a></li>
+                        <li><a href="/Home/Gallery">Gallery</a></li>
+                        <li><a href="/Home/Events">Events</a></li>
+                        <li><a href="/Home/Knowledge">Daily Knowledge</a></li>
+                    </ul>
+                </li>
+                <li><a href="/Home/Contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="/Home/Courses" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+    <main role="main">
+        @RenderBody()
+    </main>
+<footer style="background: #1a1a1a; color: #fff; padding: 60px 0 30px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <div class="logo" style="margin-bottom: 20px;">
+                        <img src="~/images/Logo.png" alt="Deeniyat Logo" style="height: 40px; border-radius: 8px;" onerror="this.src='https://placehold.co/150x40/a2ae40/ffffff?text=Deeniyat';">
+                        <span style="color: #fff;">Deeniyat</span>
+                    </div>
+                    <p style="color: #aaa; font-size: 0.95rem;">Empowering Madarsas with modern technology and quality Islamic education for a better future.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 20px; color: #fff;">Quick Links</h4>
+                    <ul style="list-style: none; padding: 0; color: #aaa; font-size: 0.95rem; line-height: 2;">
+                        <li><a href="/Home/About" style="color: #aaa; text-decoration: none;">About Us</a></li>
+                        <li><a href="/Home/Courses" style="color: #aaa; text-decoration: none;">Courses</a></li>
+                        <li><a href="/Home/Admissions" style="color: #aaa; text-decoration: none;">Admissions</a></li>
+                        <li><a href="/Home/Faq" style="color: #aaa; text-decoration: none;">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 20px; color: #fff;">Contact Us</h4>
+                    <ul style="list-style: none; padding: 0; color: #aaa; font-size: 0.95rem; line-height: 2;">
+                        <li>123 Education Street</li>
+                        <li>City, State 12345</li>
+                        <li>info@deeniyat.com</li>
+                        <li>+1 234 567 8900</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; color: #777; font-size: 0.9rem; border-top: 1px solid #333; padding-top: 30px;">
+                &copy; 2026 Deeniyat. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Initialize Anime.js animations
+        document.addEventListener('DOMContentLoaded', () => {
+            anime({
+                targets: '.fade-up',
+                translateY: [30, 0],
+                opacity: [0, 1],
+                duration: 800,
+                easing: 'easeOutCubic',
+                delay: anime.stagger(100, {start: 100})
+            });
+
+            // Animated Counters
+            const counters = document.querySelectorAll('.counter');
+            
+            const animateCounters = () => {
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-target');
+                    
+                    anime({
+                        targets: counter,
+                        innerHTML: [0, target],
+                        easing: 'easeOutExpo',
+                        round: 1,
+                        duration: 2000,
+                        update: function(a) {
+                            if (target === 500 || target === 10) {
+                                counter.innerHTML = a.animations[0].currentValue + '+';
+                            }
+                        }
+                    });
+                });
+            };
+
+            // Intersection Observer to trigger counter animation
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            if (document.querySelector('.stats-section')) {
+                observer.observe(document.querySelector('.stats-section'));
+            }
+        });
+    </script>
+</body>
+</html>

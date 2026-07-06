@@ -1,0 +1,192 @@
+@{
+    ViewData["Title"] = "Prayer";
+}
+
+<header class="prayer-hero">
+        <div class="container">
+            <div class="hijri-date-badge fade-up">
+                <i class="ph-bold ph-moon-stars"></i> 15 Safar 1448 AH
+            </div>
+            <h1 class="fade-up" style="font-size: 3rem; margin-bottom: 10px;">Today's Prayer Times</h1>
+            <p class="fade-up">New York, NY (Local Madrasa Timings)</p>
+            
+            <div class="prayer-cards-container fade-up">
+                <div class="prayer-card">
+                    <h4>Fajr</h4>
+                    <div class="time">5:15 AM</div>
+                </div>
+                <div class="prayer-card">
+                    <h4>Sunrise</h4>
+                    <div class="time">6:30 AM</div>
+                </div>
+                <div class="prayer-card current">
+                    <h4>Dhuhr</h4>
+                    <div class="time">1:10 PM</div>
+                </div>
+                <div class="prayer-card">
+                    <h4>Asr</h4>
+                    <div class="time">5:05 PM</div>
+                </div>
+                <div class="prayer-card">
+                    <h4>Maghrib</h4>
+                    <div class="time">7:45 PM</div>
+                </div>
+                <div class="prayer-card">
+                    <h4>Isha</h4>
+                    <div class="time">9:00 PM</div>
+                </div>
+                <div class="prayer-card" style="border-color: var(--secondary);">
+                    <h4>Jumu'ah</h4>
+                    <div class="time">1:30 PM</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-white">
+        <div class="container">
+            
+            <div class="prayer-content-grid">
+                
+                <!-- Calendar Table -->
+                <div class="prayer-schedule fade-up">
+                    <h2 style="margin-bottom: 25px;"><i class="ph-fill ph-calendar-blank" style="color: var(--primary);"></i> Monthly Timetable (August 2026)</h2>
+                    
+                    <div style="overflow-x: auto;">
+                        <table class="prayer-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Fajr</th>
+                                    <th>Sunrise</th>
+                                    <th>Dhuhr</th>
+                                    <th>Asr</th>
+                                    <th>Maghrib</th>
+                                    <th>Isha</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Aug 01</td>
+                                    <td>5:10 AM</td>
+                                    <td>6:25 AM</td>
+                                    <td>1:10 PM</td>
+                                    <td>5:08 PM</td>
+                                    <td>7:52 PM</td>
+                                    <td>9:08 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Aug 02</td>
+                                    <td>5:11 AM</td>
+                                    <td>6:26 AM</td>
+                                    <td>1:10 PM</td>
+                                    <td>5:07 PM</td>
+                                    <td>7:51 PM</td>
+                                    <td>9:06 PM</td>
+                                </tr>
+                                <tr class="today">
+                                    <td>Aug 03 (Today)</td>
+                                    <td>5:12 AM</td>
+                                    <td>6:27 AM</td>
+                                    <td>1:10 PM</td>
+                                    <td>5:07 PM</td>
+                                    <td>7:50 PM</td>
+                                    <td>9:05 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Aug 04</td>
+                                    <td>5:13 AM</td>
+                                    <td>6:28 AM</td>
+                                    <td>1:10 PM</td>
+                                    <td>5:06 PM</td>
+                                    <td>7:48 PM</td>
+                                    <td>9:03 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Aug 05</td>
+                                    <td>5:14 AM</td>
+                                    <td>6:29 AM</td>
+                                    <td>1:10 PM</td>
+                                    <td>5:05 PM</td>
+                                    <td>7:47 PM</td>
+                                    <td>9:02 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Aug 06</td>
+                                    <td>5:15 AM</td>
+                                    <td>6:30 AM</td>
+                                    <td>1:10 PM</td>
+                                    <td>5:05 PM</td>
+                                    <td>7:45 PM</td>
+                                    <td>9:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Aug 07</td>
+                                    <td>5:17 AM</td>
+                                    <td>6:31 AM</td>
+                                    <td>1:10 PM</td>
+                                    <td>5:04 PM</td>
+                                    <td>7:44 PM</td>
+                                    <td>8:58 PM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div style="margin-top: 20px; text-align: center;">
+                        <a href="/Home/Downloads" class="btn-secondary"><i class="ph-bold ph-download-simple"></i> Download Yearly Timetable (PDF)</a>
+                    </div>
+                </div>
+                
+                <!-- Sidebar content -->
+                <div class="prayer-sidebar fade-up">
+                    
+                    <!-- Qibla Direction -->
+                    <div class="qibla-card">
+                        <div class="qibla-icon">
+                            <i class="ph-fill ph-compass"></i>
+                        </div>
+                        <h3>Qibla Direction</h3>
+                        <p style="color: var(--text-muted); margin: 10px 0;">From New York, NY</p>
+                        <h2 style="color: var(--text-main); font-size: 2rem;">58.5&deg; <span style="font-size: 1rem; color: var(--text-muted);">NE</span></h2>
+                    </div>
+                    
+                    <!-- Daily Dua -->
+                    <div class="daily-dua-card">
+                        <h3>Daily Dua</h3>
+                        <div class="arabic">
+                            رَبِّ زِدْنِي عِلْمًا
+                        </div>
+                        <div class="translation">
+                            "My Lord, increase me in knowledge."
+                        </div>
+                        <p style="font-size: 0.8rem; margin-top: 15px; color: rgba(255,255,255,0.5);">[Surah Ta-Ha 20:114]</p>
+                    </div>
+                    
+                    <!-- Upcoming Islamic Events -->
+                    <div class="qibla-card" style="margin-top: 30px; text-align: left;">
+                        <h3 style="margin-bottom: 20px;"><i class="ph-fill ph-star" style="color: var(--secondary);"></i> Islamic Events</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 10px; border-bottom: 1px solid var(--border-color); margin-bottom: 10px;">
+                                <span>Ashura</span>
+                                <strong style="color: var(--primary);">Jul 25, 2026</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 10px; border-bottom: 1px solid var(--border-color); margin-bottom: 10px;">
+                                <span>Ramadan Starts</span>
+                                <strong style="color: var(--primary);">Feb 17, 2027</strong>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; padding-bottom: 10px;">
+                                <span>Eid al-Fitr</span>
+                                <strong style="color: var(--primary);">Mar 19, 2027</strong>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
