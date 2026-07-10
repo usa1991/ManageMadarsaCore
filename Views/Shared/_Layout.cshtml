@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deeniyat - The Ultimate Madrasa Management Software</title>
     <meta name="description" content="Simple, Powerful & Affordable Madrasa Management Software.">
-    
+
     <!-- Google Fonts: Outfit and Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
+
     <!-- Phosphor Icons for modern iconography -->
     @* <script src="https://unpkg.com/@phosphor-icons/web"></script> *@
-    
+
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="~/css/style.css">
 </head>
 <body>
-    
+
     <div class="alert-banner">
         <div class="marquee">
             <span>🚀 Welcome to Deeniyat - The ultimate ecosystem for your Madarsa! We are currently offering free demo installations. Contact us today! 🚀</span>
@@ -74,7 +74,7 @@
     <main role="main">
         @RenderBody()
     </main>
-<footer style="background: #1a1a1a; color: #fff; padding: 60px 0 30px;">
+    <footer style="background: #1a1a1a; color: #fff; padding: 60px 0 30px;">
         <div class="container">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
                 <div>
@@ -110,111 +110,111 @@
     </footer>
 
     <script>
-        // Navbar Scroll Effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 10) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Initialize Anime.js animations
-        document.addEventListener('DOMContentLoaded', () => {
-            anime({
-                targets: '.fade-up',
-                translateY: [30, 0],
-                opacity: [0, 1],
-                duration: 800,
-                easing: 'easeOutCubic',
-                delay: anime.stagger(100, {start: 100})
+            // Navbar Scroll Effect
+            window.addEventListener('scroll', () => {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 10) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
             });
 
-            // Animated Counters
-            const counters = document.querySelectorAll('.counter');
-            
-            const animateCounters = () => {
-                counters.forEach(counter => {
-                    const target = +counter.getAttribute('data-target');
-                    
-                    anime({
-                        targets: counter,
-                        innerHTML: [0, target],
-                        easing: 'easeOutExpo',
-                        round: 1,
-                        duration: 2000,
-                        update: function(a) {
-                            if (target === 500 || target === 10) {
-                                counter.innerHTML = a.animations[0].currentValue + '+';
+            // Initialize Anime.js animations
+            document.addEventListener('DOMContentLoaded', () => {
+                anime({
+                    targets: '.fade-up',
+                    translateY: [30, 0],
+                    opacity: [0, 1],
+                    duration: 800,
+                    easing: 'easeOutCubic',
+                    delay: anime.stagger(100, {start: 100})
+                });
+
+                // Animated Counters
+                const counters = document.querySelectorAll('.counter');
+
+                const animateCounters = () => {
+                    counters.forEach(counter => {
+                        const target = +counter.getAttribute('data-target');
+
+                        anime({
+                            targets: counter,
+                            innerHTML: [0, target],
+                            easing: 'easeOutExpo',
+                            round: 1,
+                            duration: 2000,
+                            update: function(a) {
+                                if (target === 500 || target === 10) {
+                                    counter.innerHTML = a.animations[0].currentValue + '+';
+                                }
                             }
+                        });
+                    });
+                };
+
+                // Intersection Observer to trigger counter animation
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animateCounters();
+                            observer.unobserve(entry.target);
                         }
                     });
-                });
-            };
+                }, { threshold: 0.5 });
 
-            // Intersection Observer to trigger counter animation
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        animateCounters();
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.5 });
-
-            if (document.querySelector('.stats-section')) {
-                observer.observe(document.querySelector('.stats-section'));
-            }
-        });
+                if (document.querySelector('.stats-section')) {
+                    observer.observe(document.querySelector('.stats-section'));
+                }
+            });
     </script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var swiper = new Swiper('.promoSwiper', {
-                loop: true,
-                grabCursor: true,
-                autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
+            document.addEventListener('DOMContentLoaded', function() {
+                var swiper = new Swiper('.promoSwiper', {
+                    loop: true,
+                    grabCursor: true,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+
+                // Countdown Timer Logic
+                const countDownDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000); // 7 days from now
+                const x = setInterval(function() {
+                    const now = new Date().getTime();
+                    const distance = countDownDate - now;
+
+                    if (distance < 0) {
+                        clearInterval(x);
+                        return;
+                    }
+
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    const elDays = document.getElementById("days");
+                    if (elDays) {
+                        elDays.innerHTML = days.toString().padStart(2, '0');
+                        document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+                        document.getElementById("mins").innerHTML = minutes.toString().padStart(2, '0');
+                        document.getElementById("secs").innerHTML = seconds.toString().padStart(2, '0');
+                    }
+                }, 1000);
             });
-
-            // Countdown Timer Logic
-            const countDownDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000); // 7 days from now
-            const x = setInterval(function() {
-                const now = new Date().getTime();
-                const distance = countDownDate - now;
-
-                if (distance < 0) {
-                    clearInterval(x);
-                    return;
-                }
-
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                const elDays = document.getElementById("days");
-                if (elDays) {
-                    elDays.innerHTML = days.toString().padStart(2, '0');
-                    document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
-                    document.getElementById("mins").innerHTML = minutes.toString().padStart(2, '0');
-                    document.getElementById("secs").innerHTML = seconds.toString().padStart(2, '0');
-                }
-            }, 1000);
-        });
     </script>
 </body>
 </html>

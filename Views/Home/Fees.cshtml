@@ -1,5 +1,5 @@
 @{
-    ViewData["Title"] = "Fees";
+    ViewData["Title"] = "Fee Structure";
 }
 
 <!-- Hero Banner -->
@@ -189,3 +189,23 @@
             <a href="#" class="btn-primary" style="font-size: 1.1rem; padding: 14px 32px;">Apply Now <i class="ph-bold ph-arrow-right"></i></a>
         </div>
     </section>
+
+<script>
+        // Simple FAQ Accordion Toggle
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const answer = item.nextElementSibling;
+                const icon = item.querySelector('i');
+                const isOpen = answer.style.display === 'block';
+                
+                // Close all
+                document.querySelectorAll('.faq-answer').forEach(ans => ans.style.display = 'none');
+                document.querySelectorAll('.faq-question i').forEach(i => i.style.transform = 'rotate(0deg)');
+                
+                if (!isOpen) {
+                    answer.style.display = 'block';
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            })
+        });
+    </script>

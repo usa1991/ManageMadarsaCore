@@ -202,3 +202,70 @@
     </section>
 
     <!-- Footer -->
+
+<script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Initialize Anime.js animations
+        document.addEventListener('DOMContentLoaded', () => {
+            anime({
+                targets: '.fade-up',
+                translateY: [30, 0],
+                opacity: [0, 1],
+                duration: 800,
+                easing: 'easeOutCubic',
+                delay: anime.stagger(100, {start: 100})
+            });
+        });
+
+        // Downloads Filtering & Search Logic
+        const searchInput = document.getElementById('downloadSearchInput');
+        const filterBtns = document.querySelectorAll('.download-category-btn');
+        const downloadCards = document.querySelectorAll('.download-card');
+        const noResults = document.getElementById('noResults');
+
+        function filterDownloads() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const activeFilter = document.querySelector('.download-category-btn.active').getAttribute('data-filter');
+            let visibleCount = 0;
+
+            downloadCards.forEach(card => {
+                const title = card.querySelector('h3').innerText.toLowerCase();
+                const category = card.getAttribute('data-category');
+                
+                const matchesSearch = title.includes(searchTerm);
+                const matchesFilter = activeFilter === 'all' || category === activeFilter;
+
+                if (matchesSearch && matchesFilter) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            if (visibleCount === 0) {
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+            }
+        }
+
+        searchInput.addEventListener('input', filterDownloads);
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                filterDownloads();
+            });
+        });
+    </script>

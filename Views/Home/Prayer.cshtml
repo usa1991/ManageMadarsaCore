@@ -1,5 +1,5 @@
 @{
-    ViewData["Title"] = "Prayer";
+    ViewData["Title"] = "Prayer Times";
 }
 
 <header class="prayer-hero">
@@ -134,7 +134,7 @@
                     </div>
                     
                     <div style="margin-top: 20px; text-align: center;">
-                        <a href="/Home/Downloads" class="btn-secondary"><i class="ph-bold ph-download-simple"></i> Download Yearly Timetable (PDF)</a>
+                        <a href="downloads.html" class="btn-secondary"><i class="ph-bold ph-download-simple"></i> Download Yearly Timetable (PDF)</a>
                     </div>
                 </div>
                 
@@ -190,3 +190,27 @@
     </section>
 
     <!-- Footer -->
+
+<script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Initialize Anime.js animations
+        document.addEventListener('DOMContentLoaded', () => {
+            anime({
+                targets: '.fade-up',
+                translateY: [30, 0],
+                opacity: [0, 1],
+                duration: 800,
+                easing: 'easeOutCubic',
+                delay: anime.stagger(100, {start: 100})
+            });
+        });
+    </script>

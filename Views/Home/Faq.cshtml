@@ -1,5 +1,5 @@
 @{
-    ViewData["Title"] = "Faq";
+    ViewData["Title"] = "FAQ";
 }
 
 <header class="hero section-cream" style="padding-bottom: 80px;">
@@ -160,10 +160,96 @@
             <div class="need-help-section fade-up">
                 <h2>Still have questions?</h2>
                 <p>If you couldn't find the answer to your question in the FAQ, feel free to reach out to us.</p>
-                <a href="/Home/Contact" class="btn-primary" style="padding: 12px 30px; font-size: 1.05rem;"><i class="ph-fill ph-chat-circle-text"></i> Contact Us</a>
+                <a href="contact.html" class="btn-primary" style="padding: 12px 30px; font-size: 1.05rem;"><i class="ph-fill ph-chat-circle-text"></i> Contact Us</a>
             </div>
 
         </div>
     </section>
 
     <!-- Footer -->
+
+<script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Initialize Anime.js animations
+        document.addEventListener('DOMContentLoaded', () => {
+            anime({
+                targets: '.fade-up',
+                translateY: [30, 0],
+                opacity: [0, 1],
+                duration: 800,
+                easing: 'easeOutCubic',
+                delay: anime.stagger(150, {start: 100})
+            });
+        });
+
+        // FAQ Filtering & Search Logic
+        const searchInput = document.getElementById('faqSearchInput');
+        const filterBtns = document.querySelectorAll('.faq-category-btn');
+        const faqItems = document.querySelectorAll('.faq-item');
+        const noResults = document.getElementById('noResults');
+
+        function filterFAQs() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const activeFilter = document.querySelector('.faq-category-btn.active').getAttribute('data-filter');
+            let visibleCount = 0;
+
+            faqItems.forEach(item => {
+                const text = item.innerText.toLowerCase();
+                const category = item.getAttribute('data-category');
+                
+                const matchesSearch = text.includes(searchTerm);
+                const matchesFilter = activeFilter === 'all' || category === activeFilter;
+
+                if (matchesSearch && matchesFilter) {
+                    item.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    item.style.display = 'none';
+                    item.classList.remove('active'); // Close hidden accordions
+                }
+            });
+
+            if (visibleCount === 0) {
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+            }
+        }
+
+        searchInput.addEventListener('input', filterFAQs);
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                filterFAQs();
+            });
+        });
+
+        // FAQ Accordion Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all other FAQs
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    faq.classList.remove('active');
+                });
+                
+                // Open clicked FAQ if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>

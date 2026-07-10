@@ -200,3 +200,54 @@
     </section>
 
     <!-- Footer -->
+
+<script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Initialize Anime.js animations
+        document.addEventListener('DOMContentLoaded', () => {
+            anime({
+                targets: '.fade-up',
+                translateY: [30, 0],
+                opacity: [0, 1],
+                duration: 800,
+                easing: 'easeOutCubic',
+                delay: anime.stagger(150, {start: 100})
+            });
+
+            // Simple Countdown Timer Script
+            const countDownDate = new Date().getTime() + (40 * 24 * 60 * 60 * 1000) + (12 * 60 * 60 * 1000); // 40 days and 12 hours from now
+
+            const x = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = countDownDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                if (document.getElementById("days")) {
+                    document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+                    document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+                    document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+                    document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+                }
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    if(document.getElementById("countdown")) {
+                        document.getElementById("countdown").innerHTML = "<h3 style='color:var(--primary)'>EVENT HAS STARTED</h3>";
+                    }
+                }
+            }, 1000);
+        });
+    </script>
