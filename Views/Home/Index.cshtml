@@ -1,16 +1,142 @@
-@{
-    ViewData["Title"] = "Index";
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deeniyat - The Ultimate Madrasa Management Software</title>
+    <meta name="description" content="Simple, Powerful & Affordable Madrasa Management Software.">
+    
+    <!-- Google Fonts: Outfit and Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons for modern iconography -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="alert-banner">
+        <div class="marquee">
+            <span>🚀 Welcome to Deeniyat - The ultimate ecosystem for your Madarsa! We are currently offering free demo installations. Contact us today! 🚀</span>
+        </div>
+    </div>
 
-<header class="hero-home">
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <img src="../images/Logo.png" alt="ManageMadarsa Logo" class="logo-img" onerror="this.src='https://placehold.co/150x40/a2ae40/ffffff?text=ManageMadarsa';">
+                <span>ManageMadarsa</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#features" class="active">Features</a></li>
+                <li class="dropdown">
+                    <span>About <i class="ph-bold ph-caret-down"></i></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="teachers.html">Teachers</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span>Academics <i class="ph-bold ph-caret-down"></i></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="timetable.html">Timetable</a></li>
+                        <li><a href="prayer.html">Prayer Times</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="fees.html">Fees</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a href="library.html">Library</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span>Media <i class="ph-bold ph-caret-down"></i></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="knowledge.html">Daily Knowledge</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="courses.html" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Promotional Swiper Banner -->
+    <section class="promo-banner-slider">
+            <div class="swiper promoSwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 (Sale/Countdown matching reference) -->
+                <div class="swiper-slide">
+                    <div class="promo-slide" style="background-image: url('https://images.unsplash.com/photo-1584553421349-355dbcb74f88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                        <div class="promo-content text-center">
+                            <h2>Special Enrollment Offer Ends In:</h2>
+                            <div class="countdown-timer">
+                                <div class="time-box"><span id="days">00</span><small>DAYS</small></div>
+                                <div class="time-box"><span id="hours">00</span><small>HOURS</small></div>
+                                <div class="time-box"><span id="mins">00</span><small>MINUTES</small></div>
+                                <div class="time-box"><span id="secs">00</span><small>SECONDS</small></div>
+                            </div>
+                            <a href="admissions.html" class="btn-primary">Claim 20% Off Tuition</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="promo-slide" style="background-image: url('https://images.unsplash.com/photo-1594115160868-b7ebbdc0683a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                        <div class="promo-content">
+                            <h2>Modern Islamic Education</h2>
+                            <p>Combining traditional knowledge with contemporary teaching methods.</p>
+                            <a href="courses.html" class="btn-primary">Explore Courses</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="promo-slide" style="background-image: url('https://images.unsplash.com/photo-1601340156938-161d9a263309?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                        <div class="promo-content">
+                            <h2>New Campus Opening</h2>
+                            <p>We are expanding! Visit our state-of-the-art facilities in the heart of the city.</p>
+                            <a href="about.html" class="btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Slide 4: Image Only -->
+                <div class="swiper-slide">
+                    <div class="promo-slide image-only" style="background-image: url('https://images.unsplash.com/photo-1577563908411-50cb98976fea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                        <!-- No text or content here, just the background image -->
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+
+    <header class="hero-home">
         <div class="container hero-home-grid">
             <div class="hero-home-text fade-up">
                 <div class="badge" style="margin-bottom: 20px;">WELCOME TO DEENIYAT</div>
                 <h1>Quality Islamic Education for Every Child</h1>
                 <p>Empowering the next generation with knowledge, wisdom, and core Islamic values in a nurturing, modern environment.</p>
                 <div class="hero-home-actions">
-                    <a href="/Home/Admissions" class="btn-primary">Apply Now</a>
-                    <a href="/Home/Courses" class="btn-secondary">Explore Courses</a>
+                    <a href="admissions.html" class="btn-primary">Apply Now</a>
+                    <a href="courses.html" class="btn-secondary">Explore Courses</a>
                 </div>
             </div>
             <div class="hero-home-img fade-up" style="animation-delay: 0.2s;">
@@ -91,7 +217,7 @@
                     <div class="course-content">
                         <h3>Quran Nazira (Reading)</h3>
                         <p>Learn to read the Holy Quran with proper Tajweed rules from the basics.</p>
-                        <a href="/Home/Courses" class="btn-secondary" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
+                        <a href="courses.html" class="btn-secondary" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
                     </div>
                 </div>
                 <!-- Course 2 -->
@@ -103,7 +229,7 @@
                     <div class="course-content">
                         <h3>Hifz-ul-Quran</h3>
                         <p>Memorization of the Holy Quran with a structured and supportive methodology.</p>
-                        <a href="/Home/Courses" class="btn-secondary" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
+                        <a href="courses.html" class="btn-secondary" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
                     </div>
                 </div>
                 <!-- Course 3 -->
@@ -115,7 +241,7 @@
                     <div class="course-content">
                         <h3>Islamic Studies</h3>
                         <p>Comprehensive knowledge of Fiqh, Seerah, and Hadith for daily life.</p>
-                        <a href="/Home/Courses" class="btn-secondary" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
+                        <a href="courses.html" class="btn-secondary" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
                     </div>
                 </div>
                 <!-- Course 4 -->
@@ -127,7 +253,7 @@
                     <div class="course-content">
                         <h3>Arabic Language</h3>
                         <p>Master the language of the Quran to understand its profound meanings directly.</p>
-                        <a href="/Home/Courses" class="btn-secondary" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
+                        <a href="courses.html" class="btn-secondary" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
                     </div>
                 </div>
                 <!-- Course 5 -->
@@ -139,7 +265,7 @@
                     <div class="course-content">
                         <h3>Tafseer (Exegesis)</h3>
                         <p>In-depth study and explanation of the Quranic verses and their contexts.</p>
-                        <a href="/Home/Courses" class="btn-secondary" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
+                        <a href="courses.html" class="btn-secondary" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
                     </div>
                 </div>
                 <!-- Course 6 -->
@@ -151,13 +277,13 @@
                     <div class="course-content">
                         <h3>Tajweed Intensive</h3>
                         <p>Perfect your pronunciation and recitation rules over a focused period.</p>
-                        <a href="/Home/Courses" class="btn-secondary" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
+                        <a href="courses.html" class="btn-secondary" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
                     </div>
                 </div>
             </div>
             
             <div style="text-align: center; margin-top: 40px;">
-                <a href="/Home/Courses" class="btn-primary fade-up">View All Courses</a>
+                <a href="courses.html" class="btn-primary fade-up">View All Courses</a>
             </div>
         </div>
     </section>
@@ -204,7 +330,7 @@
                         </div>
                     </div>
                     
-                    <a href="/Home/News" class="btn-secondary fade-up" style="margin-top: 30px; display: inline-block;">View All News</a>
+                    <a href="news.html" class="btn-secondary fade-up" style="margin-top: 30px; display: inline-block;">View All News</a>
                 </div>
                 
                 <div class="fade-up" style="padding-left: 20px;">
@@ -262,8 +388,152 @@
         <div class="container fade-up">
             <h2>Join Our Madrasa Today</h2>
             <p>Take the first step towards a comprehensive and nurturing Islamic education for your child. Enrollments are now open.</p>
-            <a href="/Home/Admissions" class="btn-primary" style="background: var(--bg-white); color: var(--primary);">Apply Online Now</a>
+            <a href="admissions.html" class="btn-primary" style="background: var(--bg-white); color: var(--primary);">Apply Online Now</a>
         </div>
     </section>
 
     <!-- Footer -->
+    <footer style="background: #1a1a1a; color: #fff; padding: 60px 0 30px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <div class="logo" style="margin-bottom: 20px;">
+                        <img src="../images/Logo.png" alt="ManageMadarsa Logo" style="height: 40px; border-radius: 8px;" onerror="this.src='https://placehold.co/150x40/a2ae40/ffffff?text=ManageMadarsa';">
+                        <span style="color: #fff;">Deeniyat</span>
+                    </div>
+                    <p style="color: #aaa; font-size: 0.95rem;">Empowering Madarsas with modern technology and quality Islamic education for a better future.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 20px; color: #fff;">Quick Links</h4>
+                    <ul style="list-style: none; padding: 0; color: #aaa; font-size: 0.95rem; line-height: 2;">
+                        <li><a href="about.html" style="color: #aaa; text-decoration: none;">About Us</a></li>
+                        <li><a href="courses.html" style="color: #aaa; text-decoration: none;">Courses</a></li>
+                        <li><a href="admissions.html" style="color: #aaa; text-decoration: none;">Admissions</a></li>
+                        <li><a href="faq.html" style="color: #aaa; text-decoration: none;">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 20px; color: #fff;">Contact Us</h4>
+                    <ul style="list-style: none; padding: 0; color: #aaa; font-size: 0.95rem; line-height: 2;">
+                        <li>123 Education Street</li>
+                        <li>City, State 12345</li>
+                        <li>info@deeniyat.com</li>
+                        <li>+1 234 567 8900</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; color: #777; font-size: 0.9rem; border-top: 1px solid #333; padding-top: 30px;">
+                &copy; 2026 Deeniyat. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Initialize Anime.js animations
+        document.addEventListener('DOMContentLoaded', () => {
+            anime({
+                targets: '.fade-up',
+                translateY: [30, 0],
+                opacity: [0, 1],
+                duration: 800,
+                easing: 'easeOutCubic',
+                delay: anime.stagger(100, {start: 100})
+            });
+
+            // Animated Counters
+            const counters = document.querySelectorAll('.counter');
+            
+            const animateCounters = () => {
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-target');
+                    
+                    anime({
+                        targets: counter,
+                        innerHTML: [0, target],
+                        easing: 'easeOutExpo',
+                        round: 1,
+                        duration: 2000,
+                        update: function(a) {
+                            if (target === 500 || target === 10) {
+                                counter.innerHTML = a.animations[0].currentValue + '+';
+                            }
+                        }
+                    });
+                });
+            };
+
+            // Intersection Observer to trigger counter animation
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            if (document.querySelector('.stats-section')) {
+                observer.observe(document.querySelector('.stats-section'));
+            }
+        });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var swiper = new Swiper('.promoSwiper', {
+                loop: true,
+                grabCursor: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+            // Countdown Timer Logic
+            const countDownDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000); // 7 days from now
+            const x = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = countDownDate - now;
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                const elDays = document.getElementById("days");
+                if (elDays) {
+                    elDays.innerHTML = days.toString().padStart(2, '0');
+                    document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+                    document.getElementById("mins").innerHTML = minutes.toString().padStart(2, '0');
+                    document.getElementById("secs").innerHTML = seconds.toString().padStart(2, '0');
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
