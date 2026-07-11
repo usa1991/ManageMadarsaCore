@@ -28,10 +28,10 @@
 
     <nav class="navbar">
         <div class="container nav-content">
-            <div class="logo">
-                <img src="~/images/Logo.png" alt="ManageMadarsa Logo" class="logo-img" onerror="this.src='https://placehold.co/150x40/a2ae40/ffffff?text=ManageMadarsa';">
+            <a href="/" class="logo" style="text-decoration: none;">
+                <img src="../images/Logo.png" alt="ManageMadarsa Logo" class="logo-img" onerror="this.src='https://placehold.co/150x40/a2ae40/ffffff?text=ManageMadarsa';">
                 <span>ManageMadarsa</span>
-            </div>
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html#features">Features</a></li>
                 <li class="dropdown">
@@ -74,37 +74,56 @@
     <main role="main">
         @RenderBody()
     </main>
-    <footer style="background: #1a1a1a; color: #fff; padding: 60px 0 30px;">
+
+    <!-- Footer -->
+    <footer class="footer" style="background: #1a1a1a; color: #aaa; padding: 60px 0 30px; font-size: 0.95rem;">
         <div class="container">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
                 <div>
-                    <div class="logo" style="margin-bottom: 20px;">
-                        <img src="~/images/Logo.png" alt="ManageMadarsa Logo" style="height: 40px; border-radius: 8px;" onerror="this.src='https://placehold.co/150x40/a2ae40/ffffff?text=ManageMadarsa';">
-                        <span style="color: #fff;">Deeniyat</span>
+                    <div style="margin-bottom: 20px;">
+                        <a href="/" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                            <img src="../images/Logo.png" alt="ManageMadarsa" style="height: 36px; border-radius: 6px;" onerror="this.src='https://placehold.co/150x40/a2ae40/ffffff?text=M';">
+                            <span style="color: #fff; font-size: 1.25rem; font-weight: 700; font-family: var(--font-heading, sans-serif);">ManageMadarsa</span>
+                        </a>
                     </div>
-                    <p style="color: #aaa; font-size: 0.95rem;">Empowering Madarsas with modern technology and quality Islamic education for a better future.</p>
+                    <p style="color: #aaa; line-height: 1.8; max-width: 300px;">All-in-one Solution Madrasa Management Software</p>
                 </div>
                 <div>
-                    <h4 style="margin-bottom: 20px; color: #fff;">Quick Links</h4>
-                    <ul style="list-style: none; padding: 0; color: #aaa; font-size: 0.95rem; line-height: 2;">
-                        <li><a href="/Home/About" style="color: #aaa; text-decoration: none;">About Us</a></li>
-                        <li><a href="/Home/Courses" style="color: #aaa; text-decoration: none;">Courses</a></li>
-                        <li><a href="/Home/Admissions" style="color: #aaa; text-decoration: none;">Admissions</a></li>
-                        <li><a href="/Home/Faq" style="color: #aaa; text-decoration: none;">FAQ</a></li>
+                    <h4 style="margin-bottom: 20px; color: #fff; font-size: 1.1rem; font-weight: 600;">India Branch</h4>
+                    <ul style="list-style: none; padding: 0; line-height: 2;">
+                        <li>4, Green Compond, Baragain Road, Bariatu, Ranchi</li>
+                        <li>Jharkhand, India</li>
+                        <li>+91 852 1995869</li>
+                        <li>+91 805 5188398</li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="margin-bottom: 20px; color: #fff;">Contact Us</h4>
-                    <ul style="list-style: none; padding: 0; color: #aaa; font-size: 0.95rem; line-height: 2;">
-                        <li>123 Education Street</li>
-                        <li>City, State 12345</li>
-                        <li>info@deeniyat.com</li>
-                        <li>+1 234 567 8900</li>
+                    <h4 style="margin-bottom: 20px; color: #fff; font-size: 1.1rem; font-weight: 600;">Contact</h4>
+                    <ul style="list-style: none; padding: 0; line-height: 2;">
+                        <li><a href="contact.html" style="color: #aaa; text-decoration: none;">Contact Us</a></li>
+                        <li><a href="mailto:enquiry@managemadarsa.com" style="color: #aaa; text-decoration: none;">enquiry@managemadarsa.com</a></li>
+                        <li><a href="mailto:support@managemadarsa.com" style="color: #aaa; text-decoration: none;">support@managemadarsa.com</a></li>
+                        <li><a href="#" style="color: #aaa; text-decoration: none;">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
-            <div style="text-align: center; color: #777; font-size: 0.9rem; border-top: 1px solid #333; padding-top: 30px;">
-                &copy; 2026 Deeniyat. All rights reserved.
+            
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 15px; border-top: 1px solid #333; padding-top: 30px;">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                    <a href="https://apps.microsoft.com/detail/9n0x938v2mxk?hl=en-US&gl=IN" target="_blank" style="display: flex; align-items: center; gap: 8px; color: #377fc0; font-weight: 600; font-size: 1.1rem; text-decoration: none;">
+                        <i class="ph-fill ph-windows-logo" style="font-size: 1.6rem;"></i> Windows
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.managemadarsa.amaaltracker" target="_blank" style="display: inline-block;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" style="height: 42px;">
+                    </a>
+                    <a href="https://apps.apple.com/us/app/amaal-tracker/id6739861834" target="_blank" style="display: inline-block;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" style="height: 42px;">
+                    </a>
+                </div>
+                <div style="color: #777; font-size: 0.95rem; line-height: 1.8; margin-top: 10px; text-align: center;">
+                    &copy; 2025 ManageMadarsa.<br>
+                    Designed by <a href="/" style="color: #377fc0; text-decoration: none;">ManageMadarsa</a>
+                </div>
             </div>
         </div>
     </footer>
