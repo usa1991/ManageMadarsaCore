@@ -8,5 +8,10 @@ public class HomeController : Controller
     public IActionResult About() => View();
     public IActionResult Vision() => View();
     public IActionResult Contact() => View();
-    public IActionResult Privacy() => View();
+    public IActionResult Features()
+        {
+            return View();
+        }
+
+        public IActionResult Privacy() => View();
 }

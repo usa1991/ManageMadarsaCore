@@ -1,5 +1,5 @@
 @{
-    ViewData["Title"] = "Contact Us";
+    ViewData["Title"] = "Contact";
 }
 
 <header class="hero section-cream">
@@ -127,27 +127,3 @@
     <!-- Footer -->
 
     <!-- Footer -->
-
-<script>
-        // Navbar Scroll Effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 10) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Initialize Anime.js animations
-        document.addEventListener('DOMContentLoaded', () => {
-            anime({
-                targets: '.fade-up',
-                translateY: [30, 0],
-                opacity: [0, 1],
-                duration: 800,
-                easing: 'easeOutCubic',
-                delay: anime.stagger(150, {start: 100})
-            });
-        });
-    </script>

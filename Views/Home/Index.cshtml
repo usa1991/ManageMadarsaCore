@@ -1,40 +1,27 @@
 @{
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "Index";
 }
 
 <!-- Promotional Swiper Banner -->
     <section class="promo-banner-slider">
-            <div class="swiper promoSwiper">
+        <div class="swiper promoSwiper">
             <div class="swiper-wrapper">
-                <!-- Slide 1 (Sale/Countdown matching reference) -->
+                <!-- Slide 1 -->
                 <div class="swiper-slide">
-                    <div class="promo-slide" style="background-image: url('https://images.unsplash.com/photo-1584553421349-355dbcb74f88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
-                        <div class="promo-content text-center">
-                            <h2>Special Enrollment Offer Ends In:</h2>
-<!-- made by "He is The Usman (≖⩊≖)" -->
-                            <div class="countdown-timer">
-                                <div class="time-box"><span id="days">00</span><small>DAYS</small></div>
-                                <div class="time-box"><span id="hours">00</span><small>HOURS</small></div>
-                                <div class="time-box"><span id="mins">00</span><small>MINUTES</small></div>
-                                <div class="time-box"><span id="secs">00</span><small>SECONDS</small></div>
-                            </div>
-                            <a href="admissions.html" class="btn-primary">Claim 20% Off Tuition</a>
-                        </div>
+                    <div class="promo-slide image-only" style="background-image: url('../images/image-2.jpg');">
                     </div>
                 </div>
                 <!-- Slide 2 -->
                 <div class="swiper-slide">
-                    <div class="promo-slide" style="background-image: url('https://images.unsplash.com/photo-1594115160868-b7ebbdc0683a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                    <div class="promo-slide" style="background-image: url('../images/Homescreen-al.png');">
                         <div class="promo-content">
-                            <h2>Modern Islamic Education</h2>
-                            <p>Combining traditional knowledge with contemporary teaching methods.</p>
-                            <a href="contact.html" class="btn-primary">Explore Courses</a>
+
                         </div>
                     </div>
                 </div>
                 <!-- Slide 3 -->
                 <div class="swiper-slide">
-                    <div class="promo-slide" style="background-image: url('https://images.unsplash.com/photo-1601340156938-161d9a263309?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                    <div class="promo-slide" style="background-image: url('../images/teachersmanagement.png');">
                         <div class="promo-content">
                             <h2>New Campus Opening</h2>
                             <p>We are expanding! Visit our state-of-the-art facilities in the heart of the city.</p>
@@ -42,10 +29,17 @@
                         </div>
                     </div>
                 </div>
-            
+
                 <!-- Slide 4: Image Only -->
                 <div class="swiper-slide">
-                    <div class="promo-slide image-only" style="background-image: url('https://images.unsplash.com/photo-1577563908411-50cb98976fea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+                    <div class="promo-slide image-only"
+                        style="background-image: url('../images/studentsmanagement-old.png');">
+                        <!-- No text or content here, just the background image -->
+                    </div>
+                </div>
+                <!-- Slide 5: Image Only -->
+                <div class="swiper-slide">
+                    <div class="promo-slide image-only" style="background-image: url('../images/CashFlow.jpg');">
                         <!-- No text or content here, just the background image -->
                     </div>
                 </div>
@@ -65,29 +59,38 @@
                     ManageMadarsa for <span style="color: var(--primary);">Integrated Islamic Schools</span>
                 </h2>
                 <p style="color: #666; font-size: 1.15rem; line-height: 1.6; margin-bottom: 30px;">
-                    ManageMadarsa is an advanced automated management software used for Madarsa/Maktab to manage there daily activities.
+                    ManageMadarsa is an advanced automated management software used for Madarsa/Maktab to manage there
+                    daily activities.
                 </p>
                 <div style="margin-bottom: 40px;">
-                    <a href="#installation" class="btn-primary" style="display: inline-flex; align-items: center; gap: 8px;">Get Started <i class="ph-bold ph-arrow-right"></i></a>
+                    <a href="#installation" class="btn-primary"
+                        style="display: inline-flex; align-items: center; gap: 8px;">Get Started <i
+                            class="ph-bold ph-arrow-right"></i></a>
                 </div>
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
                     <div style="display: flex; align-items: center; gap: 10px; color: #555; font-size: 0.95rem;">
-                        <i class="ph-bold ph-check" style="color: var(--primary); font-size: 1.1rem;"></i> Student & Academic Records
+                        <i class="ph-bold ph-check" style="color: var(--primary); font-size: 1.1rem;"></i> Student &
+                        Academic Records
                     </div>
                     <div style="display: flex; align-items: center; gap: 10px; color: #555; font-size: 0.95rem;">
-                        <i class="ph-bold ph-check" style="color: var(--primary); font-size: 1.1rem;"></i> Student & Class Management
+                        <i class="ph-bold ph-check" style="color: var(--primary); font-size: 1.1rem;"></i> Student &
+                        Class Management
                     </div>
                     <div style="display: flex; align-items: center; gap: 10px; color: #555; font-size: 0.95rem;">
-                        <i class="ph-bold ph-check" style="color: var(--primary); font-size: 1.1rem;"></i> Exams & Progress Reports
+                        <i class="ph-bold ph-check" style="color: var(--primary); font-size: 1.1rem;"></i> Exams &
+                        Progress Reports
                     </div>
                     <div style="display: flex; align-items: center; gap: 10px; color: #555; font-size: 0.95rem;">
-                        <i class="ph-bold ph-check" style="color: var(--primary); font-size: 1.1rem;"></i> Fee & Administration
+                        <i class="ph-bold ph-check" style="color: var(--primary); font-size: 1.1rem;"></i> Fee &
+                        Administration
                     </div>
                 </div>
             </div>
             <div style="flex: 1; min-width: 300px; text-align: center;">
                 <div style="background: #f8fbf4; border-radius: 20px; padding: 20px; border: 1px solid #eef5df;">
-                     <img src="../images/6.jpg" alt="ManageMadarsa Integrated Schools" style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);" onerror="this.src='https://images.unsplash.com/photo-1577563908411-50cb98976fea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';">
+                    <img src="../images/6.jpg" alt="ManageMadarsa Integrated Schools"
+                        style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);"
+                        onerror="this.src='https://images.unsplash.com/photo-1577563908411-50cb98976fea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';">
                 </div>
             </div>
         </div>
@@ -97,9 +100,10 @@
         <div class="container">
             <div class="section-header fade-up">
                 <h2>Why Choose Us</h2>
-                <p>We provide a balanced approach to education, combining traditional Islamic teachings with modern methodologies.</p>
+                <p>We provide a balanced approach to education, combining traditional Islamic teachings with modern
+                    methodologies.</p>
             </div>
-            
+
             <div class="features-grid">
                 <div class="feature-box fade-up">
                     <i class="ph-fill ph-chalkboard-teacher"></i>
@@ -131,7 +135,7 @@
                 <h2>Popular Courses</h2>
                 <p>Discover our most sought-after programs designed for various age groups and learning levels.</p>
             </div>
-            
+
             <div class="courses-preview-grid">
                 <!-- Course 1 -->
                 <div class="course-card fade-up">
@@ -142,7 +146,7 @@
                     <div class="course-content">
                         <h3>Quran Nazira (Reading)</h3>
                         <p>Learn to read the Holy Quran with proper Tajweed rules from the basics.</p>
-                        
+
                     </div>
                 </div>
                 <!-- Course 2 -->
@@ -154,7 +158,7 @@
                     <div class="course-content">
                         <h3>Hifz-ul-Quran</h3>
                         <p>Memorization of the Holy Quran with a structured and supportive methodology.</p>
-                        
+
                     </div>
                 </div>
                 <!-- Course 3 -->
@@ -166,7 +170,7 @@
                     <div class="course-content">
                         <h3>Islamic Studies</h3>
                         <p>Comprehensive knowledge of Fiqh, Seerah, and Hadith for daily life.</p>
-                        
+
                     </div>
                 </div>
                 <!-- Course 4 -->
@@ -178,7 +182,7 @@
                     <div class="course-content">
                         <h3>Arabic Language</h3>
                         <p>Master the language of the Quran to understand its profound meanings directly.</p>
-                        
+
                     </div>
                 </div>
                 <!-- Course 5 -->
@@ -190,7 +194,7 @@
                     <div class="course-content">
                         <h3>Tafseer (Exegesis)</h3>
                         <p>In-depth study and explanation of the Quranic verses and their contexts.</p>
-                        
+
                     </div>
                 </div>
                 <!-- Course 6 -->
@@ -202,54 +206,73 @@
                     <div class="course-content">
                         <h3>Tajweed Intensive</h3>
                         <p>Perfect your pronunciation and recitation rules over a focused period.</p>
-                        
+
                     </div>
                 </div>
             </div>
-            
+
 
         </div>
     </section>
 
-    
+
 
     <section id="installation" class="installation-steps-section section-white" style="padding: 60px 0;">
         <div class="container fade-up">
-            <div style="border: 1px solid #eaeaea; padding: 40px; border-radius: 8px; text-align: center; margin-bottom: 80px;">
-                <h2 style="font-size: 2.2rem; color: #222; margin-bottom: 10px; font-weight: 600;">How to Install ManageMadarsa in your Madarsa/Maktab ?</h2>
-                <p style="color: #888; font-size: 1.1rem;">Follow the basic steps below and enjoy awesome features of ManageMadarsa</p>
+            <div
+                style="border: 1px solid #eaeaea; padding: 40px; border-radius: 8px; text-align: center; margin-bottom: 80px;">
+                <h2 style="font-size: 2.2rem; color: #222; margin-bottom: 10px; font-weight: 600;">How to Install
+                    ManageMadarsa in your Madarsa/Maktab ?</h2>
+                <p style="color: #888; font-size: 1.1rem;">Follow the basic steps below and enjoy awesome features of
+                    ManageMadarsa</p>
             </div>
 
-            <div class="timeline-container" style="display: flex; justify-content: space-between; align-items: flex-start; position: relative; max-width: 1000px; margin: 0 auto; text-align: center;">
+            <div class="timeline-container"
+                style="display: flex; justify-content: space-between; align-items: flex-start; position: relative; max-width: 1000px; margin: 0 auto; text-align: center;">
                 <!-- Connecting Line -->
-                <div style="position: absolute; top: 38px; left: 12.5%; right: 12.5%; height: 4px; background-color: #dbe4aa; z-index: 1;"></div>
-                
+                <div
+                    style="position: absolute; top: 38px; left: 12.5%; right: 12.5%; height: 4px; background-color: #dbe4aa; z-index: 1;">
+                </div>
+
                 <!-- Step 1 -->
                 <div style="flex: 1; position: relative; z-index: 2; padding: 0 15px;">
                     <h4 style="color: #888; font-size: 1.1rem; margin-bottom: 15px; font-weight: 600;">Step 1</h4>
-                    <div style="width: 16px; height: 16px; background-color: #a4b73b; border: 6px solid #dbe4aa; border-radius: 50%; margin: 0 auto 25px; box-sizing: content-box;"></div>
-                    <p style="color: #999; font-size: 0.95rem; line-height: 1.6;">Sing up with the Demo Form on<br>website</p>
+                    <div
+                        style="width: 16px; height: 16px; background-color: #a4b73b; border: 6px solid #dbe4aa; border-radius: 50%; margin: 0 auto 25px; box-sizing: content-box;">
+                    </div>
+                    <p style="color: #999; font-size: 0.95rem; line-height: 1.6;">Sing up with the Demo Form
+                        on<br>website</p>
                 </div>
 
                 <!-- Step 2 -->
                 <div style="flex: 1; position: relative; z-index: 2; padding: 0 15px;">
+<!-- made by "He is The Usman (≖⩊≖)" -->
                     <h4 style="color: #888; font-size: 1.1rem; margin-bottom: 15px; font-weight: 600;">Step 2</h4>
-                    <div style="width: 16px; height: 16px; background-color: #a4b73b; border: 6px solid #dbe4aa; border-radius: 50%; margin: 0 auto 25px; box-sizing: content-box;"></div>
-                    <p style="color: #999; font-size: 0.95rem; line-height: 1.6;">Our Support Team will get in touch<br>to understand the requirement</p>
+                    <div
+                        style="width: 16px; height: 16px; background-color: #a4b73b; border: 6px solid #dbe4aa; border-radius: 50%; margin: 0 auto 25px; box-sizing: content-box;">
+                    </div>
+                    <p style="color: #999; font-size: 0.95rem; line-height: 1.6;">Our Support Team will get in
+                        touch<br>to understand the requirement</p>
                 </div>
 
                 <!-- Step 3 -->
                 <div style="flex: 1; position: relative; z-index: 2; padding: 0 15px;">
                     <h4 style="color: #888; font-size: 1.1rem; margin-bottom: 15px; font-weight: 600;">Step 3</h4>
-                    <div style="width: 16px; height: 16px; background-color: #a4b73b; border: 6px solid #dbe4aa; border-radius: 50%; margin: 0 auto 25px; box-sizing: content-box;"></div>
-                    <p style="color: #999; font-size: 0.95rem; line-height: 1.6;">Download Link will be shared<br>through your given email address</p>
+                    <div
+                        style="width: 16px; height: 16px; background-color: #a4b73b; border: 6px solid #dbe4aa; border-radius: 50%; margin: 0 auto 25px; box-sizing: content-box;">
+                    </div>
+                    <p style="color: #999; font-size: 0.95rem; line-height: 1.6;">Download Link will be
+                        shared<br>through your given email address</p>
                 </div>
 
                 <!-- Step 4 -->
                 <div style="flex: 1; position: relative; z-index: 2; padding: 0 15px;">
                     <h4 style="color: #888; font-size: 1.1rem; margin-bottom: 15px; font-weight: 600;">Step 4</h4>
-                    <div style="width: 16px; height: 16px; background-color: #a4b73b; border: 6px solid #dbe4aa; border-radius: 50%; margin: 0 auto 25px; box-sizing: content-box;"></div>
-                    <p style="color: #999; font-size: 0.95rem; line-height: 1.6;">Install the downloaded files in your<br>PC and get started with<br>ManageMadarsa .</p>
+                    <div
+                        style="width: 16px; height: 16px; background-color: #a4b73b; border: 6px solid #dbe4aa; border-radius: 50%; margin: 0 auto 25px; box-sizing: content-box;">
+                    </div>
+                    <p style="color: #999; font-size: 0.95rem; line-height: 1.6;">Install the downloaded files in
+                        your<br>PC and get started with<br>ManageMadarsa .</p>
                 </div>
             </div>
         </div>
@@ -258,111 +281,3 @@
     <!-- Footer -->
 
     <!-- Footer -->
-
-<script>
-        // Navbar Scroll Effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 10) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Initialize Anime.js animations
-        document.addEventListener('DOMContentLoaded', () => {
-            anime({
-                targets: '.fade-up',
-                translateY: [30, 0],
-                opacity: [0, 1],
-                duration: 800,
-                easing: 'easeOutCubic',
-                delay: anime.stagger(100, {start: 100})
-            });
-
-            // Animated Counters
-            const counters = document.querySelectorAll('.counter');
-            
-            const animateCounters = () => {
-                counters.forEach(counter => {
-                    const target = +counter.getAttribute('data-target');
-                    
-                    anime({
-                        targets: counter,
-                        innerHTML: [0, target],
-                        easing: 'easeOutExpo',
-                        round: 1,
-                        duration: 2000,
-                        update: function(a) {
-                            if (target === 500 || target === 10) {
-                                counter.innerHTML = a.animations[0].currentValue + '+';
-                            }
-                        }
-                    });
-                });
-            };
-
-            // Intersection Observer to trigger counter animation
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        animateCounters();
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.5 });
-
-            if (document.querySelector('.stats-section')) {
-                observer.observe(document.querySelector('.stats-section'));
-            }
-        });
-    </script>
-
-    <!-- Swiper JS -->
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var swiper = new Swiper('.promoSwiper', {
-                loop: true,
-                grabCursor: true,
-                autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-
-            // Countdown Timer Logic
-            const countDownDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000); // 7 days from now
-            const x = setInterval(function() {
-                const now = new Date().getTime();
-                const distance = countDownDate - now;
-
-                if (distance < 0) {
-                    clearInterval(x);
-                    return;
-                }
-
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                const elDays = document.getElementById("days");
-                if (elDays) {
-                    elDays.innerHTML = days.toString().padStart(2, '0');
-                    document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
-                    document.getElementById("mins").innerHTML = minutes.toString().padStart(2, '0');
-                    document.getElementById("secs").innerHTML = seconds.toString().padStart(2, '0');
-                }
-            }, 1000);
-        });
-    </script>
